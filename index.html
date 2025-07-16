@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грамматика для эссе IELTS/TOEFL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .section {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        .exercise {
+            background-color: #e8f4fc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .error {
+            color: #e74c3c;
+            text-decoration: line-through;
+        }
+        .correct {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .explanation {
+            display: none;
+            background-color: #e8f7ee;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+        .answer {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .correct-answer {
+            color: #27ae60;
+        }
+        .wrong-answer {
+            color: #e74c3c;
+        }
+        .task-type {
+            background-color: #e8eaf6;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Грамматика для эссе IELTS/TOEFL</h1>
+    
+    <div class="section">
+        <h2>I. Типичные грамматические ошибки в обоих типах эссе</h2>
+        
+        <div class="task-type">Subject-Verb Agreement</div>
+        <p><span class="error">Many people says that…</span> ❌</p>
+        <p><span class="correct">✅ Many people say that…</span></p>
+        
+        <div class="task-type">Articles (a/an/the)</div>
+        <p><span class="error">They go to university to get the job.</span> ❌</p>
+        <p><span class="correct">✅ They go to a university to get a job.</span></p>
+        
+        <div class="task-type">Времена</div>
+        <p><span class="error">Nowadays, people watched more TV.</span> ❌</p>
+        <p><span class="correct">✅ Nowadays, people watch more TV.</span></p>
+        
+        <div class="task-type">Сложные предложения</div>
+        <p><span class="error">Because people have stress. They cannot sleep.</span> ❌</p>
+        <p><span class="correct">✅ Because people have stress, they cannot sleep.</span></p>
+        <p><span class="correct">✅ People cannot sleep because of stress.</span></p>
+        
+        <div class="task-type">Порядок слов</div>
+        <p><span class="error">Also it is important to note…</span> ❌</p>
+        <p><span class="correct">✅ It is also important to note…</span></p>
+        
+        <div class="task-type">Пассивный залог</div>
+        <p><span class="error">A solution should be implement.</span> ❌</p>
+        <p><span class="correct">✅ A solution should be implemented.</span></p>
+        
+        <div class="task-type">Модальные глаголы</div>
+        <p><span class="error">Government must to do something.</span> ❌</p>
+        <p><span class="correct">✅ The government must do something.</span></p>
+        
+        <div class="task-type">Инфинитив/Герундий</div>
+        <p><span class="error">People are interested to learn new skills.</span> ❌</p>
+        <p><span class="correct">✅ People are interested in learning new skills.</span></p>
+    </div>
+    
+    <div class="section">
+        <h2>II. Особые ошибки по типу эссе</h2>
+        
+        <h3>🔹 Problem / Solution Essay</h3>
+        <div class="task-type">Формулировка проблемы</div>
+        <p><span class="error">One of the problem is...</span> ❌</p>
+        <p><span class="correct">✅ One of the problems is…</span></p>
+        
+        <div class="task-type">Форма глагола в решениях</div>
+        <p><span class="error">The government should builded more hospitals.</span> ❌</p>
+        <p><span class="correct">✅ The government should build more hospitals.</span></p>
+        
+        <h3>🔹 Discussion Essay (Two Opinions + Your Opinion)</h3>
+        <div class="task-type">Linking phrases</div>
+        <p><span class="error">On the another hand…</span> ❌</p>
+        <p><span class="correct">✅ On the other hand…</span></p>
+        
+        <div class="task-type">Согласование времён</div>
+        <p><span class="error">Some people believe, others believed…</span> ❌</p>
+        <p><span class="correct">✅ Some people believe, while others argue…</span></p>
+    </div>
+    
+    <!-- Практические упражнения -->
+    <div class="section">
+        <h2>✍️ Практические упражнения</h2>
+        
+        <h3>Раздел 1: Subject-Verb Agreement</h3>
+        <div class="exercise">
+            <p>4. Neither solution ___ completely effective.</p>
+            <input type="text" id="q1-4" placeholder="Ваш ответ">
+            <button onclick="checkAnswer('q1-4', 'is')">Проверить</button>
+            <span class="answer" id="a1-4"></span>
+            <div class="explanation" id="e1-4">
+                "Neither" всегда требует единственного числа, поэтому — is.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>5. A variety of methods ___ been proposed.</p>
+            <input type="text" id="q1-5" placeholder="Ваш ответ">
+            <button onclick="checkAnswer('q1-5', 'have')">Проверить</button>
+            <span class="answer" id="a1-5"></span>
+            <div class="explanation" id="e1-5">
+                Несмотря на "variety", подлежащее — methods (множественное число), значит have.
+            </div>
+        </div>
+        
+        <h3>Раздел 2: Articles</h3>
+        <div class="exercise">
+            <p>3. I believe that education is ___ key to success.</p>
+            <input type="text" id="q2-3" placeholder="Ваш ответ">
+            <button onclick="checkAnswer('q2-3', 'the')">Проверить</button>
+            <span class="answer" id="a2-3"></span>
+            <div class="explanation" id="e2-3">
+                "The key" — устойчивое выражение, конкретное → the.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>4. ___ government should invest more in public transport.</p>
+            <input type="text" id="q2-4" placeholder="Ваш ответ">
+            <button onclick="checkAnswer('q2-4', 'The')">Проверить</button>
+            <span class="answer" id="a2-4"></span>
+            <div class="explanation" id="e2-4">
+                В любом государстве — один главный орган = the.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>5. Smartphones are used by ___ majority of teenagers.</p>
+            <input type="text" id="q2-5" placeholder="Ваш ответ">
+            <button onclick="checkAnswer('q2-5', 'the')">Проверить</button>
+            <span class="answer" id="a2-5"></span>
+            <div class="explanation" id="e2-5">
+                "The majority" — всегда с артиклем the.
+            </div>
+        </div>
+        
+        <h3>Раздел 3: Complex Sentences</h3>
+        <div class="exercise">
+            <p>Cars are convenient. They cause traffic problems.</p>
+            <input type="text" id="q3-2" placeholder="Ваш ответ" style="width: 100%;">
+            <button onclick="checkComplexAnswer('q3-2', ['Although cars are convenient, they cause traffic problems', 'While cars are convenient, they cause traffic problems'])">Проверить</button>
+            <span class="answer" id="a3-2"></span>
+            <div class="explanation" id="e3-2">
+                Используется although/while для контраста.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Technology is helpful. It can also reduce human jobs.</p>
+            <input type="text" id="q3-3" placeholder="Ваш ответ" style="width: 100%;">
+            <button onclick="checkComplexAnswer('q3-3', ['While technology is helpful, it can reduce human jobs', 'Although technology is helpful, it can reduce human jobs', 'Technology is helpful, but it can reduce human jobs'])">Проверить</button>
+            <span class="answer" id="a3-3"></span>
+            <div class="explanation" id="e3-3">
+                While/Although показывает противопоставление (плюс/минус).
+            </div>
+        </div>
+        
+        <h3>Раздел 4: Passive Voice</h3>
+        <div class="exercise">
+            <p>People use the internet for studying.</p>
+            <input type="text" id="q4-2" placeholder="Ваш ответ" style="width: 100%;">
+            <button onclick="checkAnswer('q4-2', 'The internet is used for studying')">Проверить</button>
+            <span class="answer" id="a4-2"></span>
+            <div class="explanation" id="e4-2">
+                Подлежащее — "internet" (ед. число) → is used.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>They will introduce a new law next year.</p>
+            <input type="text" id="q4-3" placeholder="Ваш ответ" style="width: 100%;">
+            <button onclick="checkAnswer('q4-3', 'A new law will be introduced next year')">Проверить</button>
+            <span class="answer" id="a4-3"></span>
+            <div class="explanation" id="e4-3">
+                Future Simple Passive → will be + V3 → will be introduced.
+            </div>
+        </div>
+        
+        <h3>Раздел 5: Infinitive / Gerund</h3>
+        <div class="exercise">
+            <p>It is important (to reduce / reducing) plastic use.</p>
+            <input type="text" id="q5-2" placeholder="Ваш ответ (to reduce или reducing)">
+            <button onclick="checkAnswer('q5-2', 'to reduce')">Проверить</button>
+            <span class="answer" id="a5-2"></span>
+            <div class="explanation" id="e5-2">
+                После "important" идёт инфинитив to + V.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>She suggested (to take / taking) public transport.</p>
+            <input type="text" id="q5-3" placeholder="Ваш ответ (to take или taking)">
+            <button onclick="checkAnswer('q5-3', 'taking')">Проверить</button>
+            <span class="answer" id="a5-3"></span>
+            <div class="explanation" id="e5-3">
+                После suggest — всегда герундий (taking), не to take.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>I look forward to (meet / meeting) you.</p>
+            <input type="text" id="q5-4" placeholder="Ваш ответ (meet или meeting)">
+            <button onclick="checkAnswer('q5-4', 'meeting')">Проверить</button>
+            <span class="answer" id="a5-4"></span>
+            <div class="explanation" id="e5-4">
+                После "look forward to" всегда герундий (V-ing), даже если "to" выглядит как инфинитив.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Many students avoid (to speak / speaking) in class.</p>
+            <input type="text" id="q5-5" placeholder="Ваш ответ (to speak или speaking)">
+            <button onclick="checkAnswer('q5-5', 'speaking')">Проверить</button>
+            <span class="answer" id="a5-5"></span>
+            <div class="explanation" id="e5-5">
+                После avoid — только V-ing.
+            </div>
+        </div>
+        
+        <h3>Раздел 6: Исправление ошибок</h3>
+        <div class="exercise">
+            <p>One of the main reason of unemployment is automation.</p>
+            <input type="text" id="q6-1" placeholder="Исправленное предложение" style="width: 100%;">
+            <button onclick="checkAnswer('q6-1', 'One of the main reasons for unemployment is automation')">Проверить</button>
+            <span class="answer" id="a6-1"></span>
+            <div class="explanation" id="e6-1">
+                После "one of the" всегда множественное число.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Government should provides free education.</p>
+            <input type="text" id="q6-2" placeholder="Исправленное предложение" style="width: 100%;">
+            <button onclick="checkAnswer('q6-2', 'The government should provide free education')">Проверить</button>
+            <span class="answer" id="a6-2"></span>
+            <div class="explanation" id="e6-2">
+                1) Нужен артикль "the" перед government.<br>
+                2) После should — инфинитив без -s.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Some people believes that homework is unnecessary.</p>
+            <input type="text" id="q6-3" placeholder="Исправленное предложение" style="width: 100%;">
+            <button onclick="checkAnswer('q6-3', 'Some people believe that homework is unnecessary')">Проверить</button>
+            <span class="answer" id="a6-3"></span>
+            <div class="explanation" id="e6-3">
+                "Some people" — множественное → глагол без -s.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Children can learns better with technology.</p>
+            <input type="text" id="q6-4" placeholder="Исправленное предложение" style="width: 100%;">
+            <button onclick="checkAnswer('q6-4', 'Children can learn better with technology')">Проверить</button>
+            <span class="answer" id="a6-4"></span>
+            <div class="explanation" id="e6-4">
+                После can — инфинитив без -s.
+            </div>
+        </div>
+        
+        <div class="exercise">
+            <p>Pollution increase every year and it causes climate change.</p>
+            <input type="text" id="q6-5" placeholder="Исправленное предложение" style="width: 100%;">
+            <button onclick="checkAnswer('q6-5', 'Pollution increases every year and it causes climate change')">Проверить</button>
+            <span class="answer" id="a6-5"></span>
+            <div class="explanation" id="e6-5">
+                Pollution — ед. число → глагол в 3 лице: increases.
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🧠 Советы для высокого балла (7.0–8.0)</h2>
+        
+        <h3>✏️ Разнообразие структур:</h3>
+        <ul>
+            <li><strong>Сложноподчинённые:</strong> "Although many argue that..., others maintain that..."</li>
+            <li><strong>Условные:</strong> "If governments invested more in education, society would benefit."</li>
+            <li><strong>Пассивные:</strong> "It is widely believed that..."</li>
+            <li><strong>Participle clauses:</strong> "Having considered all arguments, I believe that..."</li>
+        </ul>
+        
+        <h3>🚦 Сложные связки:</h3>
+        <ul>
+            <li>"Not only does this approach..., but it also..."</li>
+            <li>"Whereas some countries..., others..."</li>
+            <li>"Despite the fact that technology advances rapidly, many..."</li>
+        </ul>
+        
+        <h3>🎯 Контрольный список:</h3>
+        <ol>
+            <li>Проверь все артикли (a/an/the/∅)</li>
+            <li>Убедись в согласовании подлежащего и глагола</li>
+            <li>Проверь последовательность времён</li>
+            <li>Используй разные грамматические структуры</li>
+            <li>Избегай повторения одних и тех же конструкций</li>
+        </ol>
+    </div>
+    
+    <script>
+        function checkAnswer(inputId, correctAnswer) {
+            const userAnswer = document.getElementById(inputId).value.trim();
+            const answerElement = document.getElementById('a' + inputId);
+            const explanationElement = document.getElementById('e' + inputId);
+            
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                answerElement.textContent = '✅ Правильно!';
+                answerElement.className = 'answer correct-answer';
+            } else {
+                answerElement.textContent = `❌ Неправильно. Правильный ответ: ${correctAnswer}`;
+                answerElement.className = 'answer wrong-answer';
+            }
+            
+            explanationElement.style.display = 'block';
+        }
+        
+        function checkComplexAnswer(inputId, possibleAnswers) {
+            const userAnswer = document.getElementById(inputId).value.trim();
+            const answerElement = document.getElementById('a' + inputId);
+            const explanationElement = document.getElementById('e' + inputId);
+            
+            let isCorrect = false;
+            const correctAnswers = [];
+            
+            for (let answer of possibleAnswers) {
+                correctAnswers.push(answer);
+                if (userAnswer.toLowerCase() === answer.toLowerCase()) {
+                    isCorrect = true;
+                    break;
+                }
+            }
+            
+            if (isCorrect) {
+                answerElement.textContent = '✅ Правильно!';
+                answerElement.className = 'answer correct-answer';
+            } else {
+                answerElement.textContent = `❌ Неправильно. Возможные ответы: ${correctAnswers.join(' или ')}`;
+                answerElement.className = 'answer wrong-answer';
+            }
+            
+            explanationElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
